@@ -38,7 +38,7 @@ deploy:
   - provider: script
     script: twine upload --repository testpypi dist/*
     on:
-      repo: pyupio/yeison_todo
+      repo: yeisonvargasf/yeison_todo
       branch: master
       python: 3.9
       tags: true
