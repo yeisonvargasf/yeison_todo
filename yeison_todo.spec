@@ -6,7 +6,7 @@ a = Analysis(
     ['yeison_todo/cli.py'],
     pathex=['.'],
     binaries=[],
-    datas=[],
+    datas=[ ('yeison_todo/VERSION', '.') ],
     hiddenimports=[
         'click',
         'pkg_resources.py2_warn',
