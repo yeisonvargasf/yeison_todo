@@ -11,7 +11,7 @@ env:
 branches:
   only:
   - master
-  - "/^\\d+\\.\\d+(\\.\\d+)?((a|b|rc)?\\d+)?$/"
+  - "/^\d+\.\d+(\.\d+)?((a|b|rc)?\d+)?$/"
 
 language: python
 
@@ -30,6 +30,7 @@ after_success:
   - codecov
 
 before_deploy:
+  - cd ~/
   - pip install --upgrade build
   - pip install --upgrade twine
   - python3 -m build
