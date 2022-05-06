@@ -30,14 +30,13 @@ after_success:
   - codecov
 
 before_deploy:
-  - cd ~/
   - pip install --upgrade build
   - pip install --upgrade twine
   - python3 -m build
 
 deploy:
   - provider: script
-    script: twine upload --repository testpypi dist/*
+    script: twine upload --repository testpypi dist/*/* --verbose
     on:
       repo: yeisonvargasf/yeison_todo
       branch: master
