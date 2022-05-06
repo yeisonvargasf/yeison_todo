@@ -59,6 +59,6 @@ deploy:
   - provider: GitHub
     description: 'yeison_todo Binary Release'
     auth_token:
-      secure: h8S0XqdLIUQIPPshQfVy/ytDZ8lSD5o17RzabHGGXz2p68UNcxbSKtbu179TlI0C
+      secure: 85QEE4bIxh+Z0f3TwM9GiyY1ntr/04eGX9V7+1Yjsk77M6sk1/9meSPEvhnvSzZD
     on:
       APPVEYOR_REPO_TAG: true
