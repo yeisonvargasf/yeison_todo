@@ -36,7 +36,7 @@ before_deploy:
 
 deploy:
   - provider: script
-    script: twine upload --repository testpypi dist/*/* --verbose
+    script: twine upload --repository testpypi dist/yeison_todo-0.1b1-py3-none-any.whl --verbose
     on:
       repo: yeisonvargasf/yeison_todo
       branch: master
