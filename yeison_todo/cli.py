@@ -9,7 +9,7 @@ LOG = logging.getLogger(__name__)
 
 
 def get_version():
-    from . import VERSION
+    from yeison_todo import VERSION
     return VERSION
 
 
