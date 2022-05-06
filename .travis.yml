@@ -32,11 +32,10 @@ after_success:
 before_deploy:
   - pip install --upgrade build
   - pip install --upgrade twine
-  - python3 -m build
 
 deploy:
   - provider: script
-    script: twine upload --repository testpypi dist/yeison_todo-0.1b1-py3-none-any.whl --verbose
+    script: python3 -m build && twine upload --repository testpypi dist/*
     on:
       repo: yeisonvargasf/yeison_todo
       branch: master
